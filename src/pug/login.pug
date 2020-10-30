@@ -1,0 +1,27 @@
+extends includes/_layout.pug
+
+block content
+  section(id="login")
+    +navBreadcrumb("الرئيسية","تسجيل الدخول")
+    .container
+      form(class="form-co" action="#")
+        -let x = " wow bounce"
+        div(class="co-img"+x data-wow-duration="2s" data-wow-delay=".1s")
+          img(src=img + "logo.png", alt="")
+        div(class="form-group"+x data-wow-duration="2s" data-wow-delay=".15s")
+          input(type="text" class="form-control" aria-describedby="phone" placeholder="الجوال")
+        div(class="form-group"+x data-wow-duration="2s" data-wow-delay=".2s")
+          input(type="password" class="form-control" aria-describedby="password" placeholder="كلمة المرور")
+        div(class="bottom-co d-flex justify-content-between")
+          div(class="custom-control custom-checkbox wow bounceInRight" data-wow-duration="2s" data-wow-delay=".1s")
+            input(type="checkbox" class="custom-control-input" id="remember-me")
+            label(class="custom-control-label" for="remember-me")
+              | تذكرنى
+          div( class="wow bounceInLeft" data-wow-duration="2s" data-wow-delay=".1s")
+            a(href="#" class="link-forget-password")
+              i(class="fa fa-exclamation-triangle")
+              | هل نسيت كلمة المرور
+        div(class="form-group d-flex justify-content-between co-db-btn wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s")
+          input(type="submit" class="btn-login hvr-wobble-vertical" aria-describedby="submit" value="دخول" )
+          a(href="#" class="btn-create-new-acount hvr-wobble-vertical")
+            | انشاء حساب جديد

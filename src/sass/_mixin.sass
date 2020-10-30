@@ -1,0 +1,267 @@
+.nav-breadcrumb
+    margin-bottom: 25px
+    margin-top: 25px
+    .breadcrumb
+        background: $color-2
+        border-radius: 0px
+        border: 1px solid $color-8-2
+        padding: 18px
+        align-items: center
+        .breadcrumb-item
+            font-size: $font-e
+            @media screen and ( max-width:  $xs)
+                font-size: $font-e - 3px
+                
+            &::before
+                font-size: $font-e
+                font-weight: bold
+                color: $color-1
+            a
+                color: $color-14
+            &.active
+                color: $color-1
+
+
+#ui-datepicker-div
+    width: 500px !important
+    font-family: janna !important
+    @media screen and ( max-width: $md)
+        width: 400px !important
+    @media screen and ( max-width: $xs)
+        width: 100% !important
+        left: 0px !important
+        z-index: 9999
+    input,select,textarea,button
+        font-family: janna !important
+    .ui-state-default
+        text-align: center
+
+        
+
+
+    
+#mo-blog
+    padding: 58px 0px
+    background-color: $color-11
+    hr
+        margin: 0px
+        margin-bottom: 29px
+    .btns-arrows
+        height: 0px
+        button
+            background: transparent
+            border: none
+            font-size: $font-k
+            color: $color-14
+            outline: none
+            cursor: pointer
+            padding-top: 12px
+            vertical-align: middle
+    .co-slider-2
+        .co-1
+            padding: 10px
+            .co-2
+                border: 1px solid $color-8-2
+                padding: 2px
+                position: relative
+                background: $color-2
+                display: block
+                width: 100%
+                img
+                    width: 100%
+                .title-2
+                    font-size: $font-g
+                    color: $color-6
+                    margin-top: 13px
+                    font-weight: bold
+                .para-1
+                    font-size: $font-e - .5px
+                    line-height: 23px
+                .btn-main-1
+                    padding: 7px 50px
+                    margin-bottom: 10px
+                    font-size: $font-e
+                    font-weight: bold
+                    border: 1px solid $color-14
+                .btn-heart
+                    position: absolute
+                    top: 5px
+                    left: 5px
+                    outline: none !important
+                    background: $color-1
+                    color: $color-14
+                    border: .5px solid $color-14
+                    border-radius: 50%
+                    cursor: pointer
+                    // padding: 7px
+                    width: 50px
+                    height: 50px
+                    line-height: 0px
+                    font-size: $font-i
+
+
+
+
+
+
+#donation-request
+    background-color: $color-11
+    hr
+        margin: 0px
+    .co-1
+        background: $color-11-3
+        margin-bottom: 35px
+
+        form
+            margin-top: 5px
+            padding-top: 35px !important
+            padding-bottom: 20px !important
+            max-width: 800px
+            .form-row
+                @media screen and ( max-width: $sm)
+                    flex-direction: column
+                .input-group
+                    align-items: center
+                    .form-control
+                        padding: 28px 23px
+                        border-radius: 0px 40px 40px 0px
+                        font-size: $font-g
+                        border: 3px solid $color-11-3
+                        border-left: 1px solid $color-11-3 !important
+                        box-shadow: none !important
+                        &::placeholder
+                            color: $color-14 !important
+                        &:focus
+                            border-color: rgba(0,123,255,.25)
+                            &+.input-group-append
+                                .input-group-text
+                                    border-color: rgba(0,123,255,.25)
+                    .input-group-append
+                        .input-group-text
+                            border-radius: 40px 0px 0px 40px
+                            padding: 20px 20px
+                            background-color: $color-2
+                            border: 0px
+                            font-size: $font-e
+                            border: 3px solid $color-11-3
+                            border-right: 1px solid $color-11-3 !important
+                            label
+                                display: flex !important
+                                margin: 0px !important
+                                padding: 0px !important
+                    .btn-search
+                        border-radius: 50%
+                        width: 75px
+                        height: 75px
+                        display: inline-block
+                        border: none
+                        background-color: $color-2
+                        font-size: $font-i
+                        border: 3px solid transparent
+                        cursor: pointer
+                        outline: none !important
+                        @media screen and ( max-width:  $sm)
+                            margin: auto
+                            
+                        &:hover
+                            border-color: rgba(0,123,255,.25)
+        .co-2
+            .co-3
+                background-color: $color-2
+                border-radius: 0px 100px 100px 0px
+                margin-bottom: 20px
+                display: flex
+                justify-content: space-between
+                align-items: center
+                padding: 5px 0px
+                padding-left: 25px
+                @media screen and ( max-width: $sm)
+                    padding-left: 0px
+                @media screen and ( max-width: $sm)
+                    margin-top: 84px
+                    border-radius: 0px
+                    border: 1px solid $color-14
+                    padding-bottom: 30px
+                    text-align: center
+                @media screen and ( max-width: $sm)
+                    flex-direction: column
+                .co-main-right
+                    display: flex
+                    align-items: center
+                    flex: 8
+                    @media screen and ( max-width: $sm)
+                        flex-direction: column
+                    .co-right
+                        padding: 0px 10px
+                        p
+                            direction: ltr
+                            background: $color-11
+                            border: 1px solid $color-11-3
+                            border-radius: 50%
+                            width: 145px
+                            height: 145px
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            font-family: Arial, Helvetica, sans-serif
+                            font-size: $font-n
+                            font-weight: bold
+                            margin-bottom: 0px
+                            color: $color-9
+                            @media screen and ( max-width: $sm)
+                                margin-top: -78px
+                                border: 1px solid $color-14
+                                
+                    .co-left
+                        text-align: right
+                        p
+                            margin-bottom: 0px
+                            margin-bottom: 10px
+
+                        b
+                            font-size: $font-e
+                            color: $color-1
+                            &::after
+                                content: " : "
+                        span
+                            font-size: $font-i
+                .co-main-left
+                    flex: 4
+                    display: flex
+                    justify-content: flex-end
+                    button
+                        border: $color-11
+                        background: $color-1
+                        font-size: $font-g
+                        padding: 20px 75px
+                        font-weight: bold
+                        cursor: pointer
+                        &:before
+                            background: $color-11-3
+                        &:hover
+                            // background: $color-1
+                            color: $color-2
+        .btn-main-1
+            border: 1px solid #b3b3b3
+            // display: inline-block
+            margin-top: 5px
+            margin-bottom: 25px
+        .pagination
+            margin-bottom: 0px
+            justify-content: center
+            padding-bottom: 25px
+            .page-item
+                margin: 5px
+                .page-link
+                    border: 1px solid $color-8-2
+                    color: $color-1
+                    font-size: $font-g
+                    padding: 20px 25px 
+                    @media screen and ( max-width: $sm)
+                        padding: 10px 16px 
+                        margin-top: 20px
+                    
+                &.active
+                    .page-link
+                        color: $color-2
+                        background: $color-1

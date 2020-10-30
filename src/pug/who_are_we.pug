@@ -1,0 +1,13 @@
+extends includes/_layout.pug
+
+block content
+  section(id="who_are_we-page")
+    +navBreadcrumb("الرئيسية","من نحن")
+    .container
+      div(class="co")
+        //- div(class="co-img")
+        img(src=img + "logo.png", class="mo-img wow bounce" data-wow-duration="3s" data-wow-delay="0s" alt="" )
+        -for(let i = 0; i<3; i++)
+          p(class="wow fadeIn" data-wow-duration="3s" data-wow-delay="0s" )
+            | هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+            | هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.

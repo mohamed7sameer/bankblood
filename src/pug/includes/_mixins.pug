@@ -1,0 +1,152 @@
+
+
+
+mixin navBreadcrumb()
+  nav(class="nav-breadcrumb" aria-label="breadcrumb")
+    div(class="container")
+      ol(class="breadcrumb")
+        -for(var i = 0 ; i<arguments.length; i++)
+          if i == arguments.length - 1
+            li(class="breadcrumb-item active" aria-current="page")=arguments[i]
+          else
+            li(class="breadcrumb-item")
+              a(href="#")=arguments[i]
+
+
+
+mixin blog(x="المقالات",y=1)
+  section(id="mo-blog")
+    .container
+      div(class="d-flex justify-content-between")
+        h2(class="main-title")=x
+        div(class="btns-arrows")
+          button(class="btn-arrow-right hvr-forward")
+            <i class="fa fa-chevron-right"></i>
+          button(class="btn-arrow-left hvr-backward")
+            <i class="fa fa-chevron-left"></i>
+    if(y == 1)
+      hr
+    .container
+      if(y == 0)
+        hr
+      div(class="co-slider-2")
+        - for(let i= 0; i<10; i++)
+          div(class="co-1 wow bounceInUp" data-wow-duration="2s" data-wow-delay=".1s")
+            div(class="co-2 text-center")
+              img(src=img + "p1.jpg")
+              div(class="px-2 text-left")
+                h3(class="title-2")
+                  | طريقة الوقاية من الامراض
+                p(class="para-1")
+                  | هذا النص هو مثال لنص يمكن أن يستبدل فى نفس المساحة, لقد تم توليد هذا النص من مولد النص العربى
+              -if(y == 1)
+                a(href="" class="btn-main-1 mx-auto hvr-wobble-vertical")
+                  | التفاصيل
+              button(class="btn-heart hvr-icon-pulse")
+                <i class="far fa-heart hvr-icon"></i>
+
+
+
+
+
+
+  
+mixin donationRequest(x=1)
+  -let a = "",b=""
+  -if(x == 0)
+    - a = "container"
+    - b = "mx-4"
+  -if(x == 1)
+    - b = "container"
+  section(id="donation-request" class="text-center")
+    div(class=a)
+      h2(class="main-title")
+        | طلبات البرع
+      hr
+      div(class="co-1")
+        form(class="mx-auto px-3")
+          div(class="form-row")
+            div(class="col")
+              div(class="input-group mb-3")
+                <input id="input-a" type="text" class="form-control" placeholder="اختر فصيلة الدم" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append mr-2">
+                  <span class="input-group-text" id="basic-addon2">
+                    label(for="input-a")
+                      <i class="fa fa-chevron-down"></i>
+                  </span>
+                </div>
+            div(class="col")
+              div(class="input-group mb-3")
+                <input id="input-b" type="text" class="form-control" placeholder="اختر المدينة" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append mr-2">
+                  <span class="input-group-text" id="basic-addon2">
+                    label(for="input-b")
+                      <i class="fa fa-chevron-down"></i>
+                  </span>
+                </div>
+            div(class="col flex-grow-0")
+              div(class="input-group mb-3")
+                button(class="btn-search")
+                  <i class="fa fa-search"></i>
+        div(class=b)
+          div(class="co-2")
+            - let duration = 0
+            - let moLength = ((x == 1)? 4 : 8)
+            - for(let x = 0; x<moLength; x++)
+              - duration = 10
+              div(class="co-3 wow bounceInUp" data-wow-duration="2s" data-wow-delay=".3s")
+                div(class="co-main-right")
+                  div(class="co-right")
+                    p
+                      | B+
+                  div(class="co-left")
+                    p
+                      b
+                        | اسم الحالة
+                      span
+                        | احمد محمد احمد
+                    p
+                      b
+                        | مستشفى
+                      span
+                        | القصر العينى
+                    p
+                      b
+                        | المدينة
+                      span
+                        | المنصورة
+                div(class="co-main-left")
+                  button(class="hvr-rectangle-in")
+                    | التفاصيل
+          - if(x == 1)
+            button(class="btn-main-1 hvr-wobble-vertical")
+              | المزيد
+          - if(x == 0)
+            ul(class="pagination")
+              li(class="page-item")
+                a(class="page-link" href="#")
+                  <i class="fa fa-chevron-right"></i>
+              li(class="page-item")
+                a(class="page-link" href="#")
+                  | 1
+              li(class="page-item active")
+                a(class="page-link" href="#")
+                  | 2
+              li(class="page-item")
+                a(class="page-link" href="#")
+                  | 3
+              li(class="page-item")
+                a(class="page-link" href="#")
+                  | 4
+              li(class="page-item")
+                a(class="page-link" href="#")
+                  | 5
+              li(class="page-item")
+                a(class="page-link" href="#")
+                  | 6
+              li(class="page-item")
+                a(class="page-link" href="#")
+                  <i class="fa fa-chevron-left"></i>
+
+
+

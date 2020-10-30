@@ -1,0 +1,169 @@
+// $font-1 : 30px
+// // $font-2 : 23px
+// $font-2 : 20px
+// $font-3 : 17px
+// $font-4 : 18px
+// $font-5 : 15px
+// $font-6 : 34px
+// $font-7 : 25px
+// $font-8 : 27px
+// $font-9 : 55px
+
+
+    
+
+// $mainFont: 29px
+// $font-a: 12px
+// $font-b: 13px
+// $font-c: 14px
+// $font-d: 15px
+// $font-e: 16px
+// $font-f: 18px
+// $font-g: 19px
+// $font-h: 21px
+// $font-i: 22px
+// $font-j: 23px
+// $font-k: 25px
+// $font-l: 26px
+// $font-m: 29px
+
+
+
+
+
+
+// $mainFont: 29px
+$mainFont: 29.5px
+
+$font-a: ((12/29)*$mainFont)
+$font-b: ((13/29)*$mainFont)
+$font-c: ((14/29)*$mainFont)
+$font-d: ((15/29)*$mainFont)
+$font-e: ((16/29)*$mainFont)
+$font-f: ((18/29)*$mainFont)
+$font-g: ((19/29)*$mainFont)
+$font-h: ((21/29)*$mainFont)
+$font-i: ((22/29)*$mainFont)
+$font-j: ((23/29)*$mainFont)
+$font-k: ((25/29)*$mainFont)
+$font-l: ((26/29)*$mainFont)
+$font-m: ((29/29)*$mainFont)
+$font-m2: ((36/29)*$mainFont)
+$font-n: ((40/29)*$mainFont)
+
+
+
+
+
+
+
+$color-1: rgb(45,62,80)
+$color-4: rgb(91,111,136)
+$color-11-2: rgb(26,31,37)
+$color-12: rgb(20,23,28)
+$color-10: rgb(74,68,70)
+$color-2: rgb(255,255,255)
+$color-9: rgb(40,40,40)
+$color-11-3: rgb(245,245,245)
+$color-11-4: rgb(251,251,251)
+$color-13: rgb(244,244,244)
+$color-14: rgb(179,179,179)
+$color-11: rgb(249,249,249)
+$color-8-2: rgb(235,235,235)
+$color-3: rgb(58,181,74)
+// $color-8: rgb(213,213,213)
+$color-5: rgb(228,31,41)
+$color-6: rgb(167,14,17)
+$color-15: rgb(225,160,57)
+
+
+// https://www.materialui.co/socialcolors
+$ico-facebook : #3b5999
+$ico-instagram :  #e4405f
+$ico-twitter : #55acee
+$ico-whatsapp : #25D366
+$ico-youtube : #cd201f
+$ico-google-plus : #dd4b39
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+$xs: 575.98px
+// Small devices (landscape phones, less than 768px)
+$sm: 767.98px
+// Medium devices (tablets, less than 992px)
+$md: 991.98px
+// Large devices (desktops, less than 1200px)
+$lg: 1199.98px
+
+
+
+
+
+$img : '../assets/imgs/'
+
+
+@font-face
+    font-family: janna
+    src: url(libs/fonts/ArbFONTS-Janna-LT-Bold.ttf)
+    font-weight: bold
+
+@font-face
+    font-family: janna
+    src: url(libs/fonts/ArbFONTS-Janna-LT-Regular.ttf)
+    font-weight: 400
+
+p
+    color: $color-10
+.main-title
+    font-size: $font-l
+    font-weight: bold
+    color: $color-6
+    display: inline-block
+    min-width: 110px
+    border-bottom: 2px solid $color-6
+    padding-bottom: 11px
+    margin: 0px
+.btn-main-1
+    font-size: $font-f
+    color: $color-2 !important
+    background-color: $color-1
+    padding: 10px 70px
+    display: inline-block
+    font-weight: bold // from me
+    cursor: pointer
+    text-decoration: none !important
+    // border: 3px solid $color-2
+
+.slick-slider
+    *
+        outline: none !important
+    
+
+.ico-facebook
+    transition: background .5s linear
+    &:hover
+        background: $ico-facebook !important
+
+.ico-instagram
+    transition: background .5s linear
+    &:hover
+        background: $ico-instagram !important
+
+.ico-twitter
+    transition: background .5s linear
+    &:hover
+        background: $ico-twitter !important
+
+.ico-whatsapp
+    transition: background .5s linear
+    &:hover
+        background: $ico-whatsapp !important
+
+// body
+//     margin-bottom: 1000px
+
+body,html
+    overflow-x: hidden
+
+

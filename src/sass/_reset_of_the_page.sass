@@ -1,0 +1,337 @@
+#main-donation-request
+    // padding-top: 25px
+    .main-co
+        border: 1px solid $color-8-2
+        padding: 30px 10px
+        .co
+            display: flex
+            margin-bottom: 20px
+            @media screen and ( max-width:  $xs)
+                flex-direction: column
+                text-align: center
+                
+            p
+                padding: 20px
+                margin-bottom: 0px
+                border: 1px solid $color-8-2
+                font-size: $font-h
+                &:nth-of-type(1)
+                    width: 250px        
+                    background: $color-13
+                    @media screen and ( max-width:  $xs)
+                        width: 100%
+                &:nth-of-type(2)
+                    flex: 1
+        .btn-1
+            font-size: $font-g
+            color: $color-2
+            background: $color-1
+            padding: 20px 75px
+            display: inline-block
+            margin: 10px
+            text-decoration: none !important
+            &::before
+                border: $color-1 solid 4px 
+                opacity: .5
+    .co-para-1
+        border: 1px solid $color-8-2
+        font-size: $font-g
+        line-height: 43px
+        padding: 10px 20px
+        p
+            margin-bottom: 0px
+    .co-map
+        height: 380px
+        border: 3px solid $color-8-2
+        margin-top: 20px
+        // font-weight: bold
+
+
+                    
+        
+#new-account,#login
+    // padding-top: 25px
+    $a: $color-11-4
+    background: $a
+    .form-co
+        background: $color-2
+        border: 1px solid $color-8-2
+        padding: 40px 80px
+        padding-bottom: 20px
+        margin-bottom: 30px
+        @media screen and ( max-width: $sm)
+            padding: 40px 20px
+        .co-img
+            text-align: center
+            margin-bottom: 20px
+            img
+                display: block
+                width: 388px
+                margin: 0px auto
+                @media screen and ( max-width:  $xs)
+                    width: 100%
+        .bottom-co
+            margin-bottom: 80px
+            font-size: $font-i
+            @media screen and ( max-width:  $sm)
+                margin-bottom: 40px
+            @media screen and ( max-width:  $xs)
+                font-size: $font-i - 5px
+                
+            .custom-control-label::before
+                top: 10px
+            .custom-control-label::after
+                top: 10px
+            .link-forget-password
+                i
+                    color: rgb(253,165,0)
+                    margin-left: 10px
+                color: $color-1
+        .form-group
+            margin-bottom: 40px
+            $b: $color-8-2
+            input,select
+                background-color:  $a
+                border-radius: 0px
+                box-shadow: none !important
+                font-size: $font-i
+                padding: 30px 25px
+                border-color: $b
+                &::placeholder
+                    color: $color-1
+                &:focus
+                    $y: $color-14
+                    border-color: $y
+                    &~.input-group-append .input-group-text
+                        border-color: $y
+                &[type="submit"]
+                    border: 3px solid $color-8-2
+                    background: $color-3
+                    padding: 15px 200px
+                    color: $color-2
+                    font-size: $font-m
+                    outline: none
+                    cursor: pointer
+                    @media screen and ( max-width: $sm)
+                        padding: 15px 0px
+                        width: 100%
+                        text-align: center
+            &.co-db-btn
+                @media screen and ( max-width:  $sm)
+                    flex-direction: column
+                    
+                .btn-login
+                    width: 49%
+                    border: 3px solid $color-8-2
+                    background: $color-3
+                    padding: 15px 0px
+                    color: $color-2
+                    font-size: $font-m
+                    @media screen and ( max-width:  $sm)
+                        width: 100%
+                .btn-create-new-acount
+                    width: 49%
+                    border: 3px solid $color-8-2
+                    background: $color-1
+                    padding: 15px 0px
+                    color: $color-2
+                    font-size: $font-m
+                    text-align: center
+                    text-decoration: none
+                    @media screen and ( max-width:  $sm)
+                        width: 100%
+                        margin-top: 10px
+            .input-group
+                input
+                    border-left: none
+                .input-group-text
+                    background: $a
+                    border-radius: 
+                    border-radius: 0px
+                    border-right: none
+                    border-color: $b
+                    .fa-calendar
+                        font-size: $font-m
+                    
+            .custom-select
+                height: initial
+                padding: 14px 25px
+                background: none
+                background: url($img + 'chevron-down-solid.svg') no-repeat 10px center
+                background-size: $font-g
+                background-color:  $a
+                position: relative
+                
+                
+
+
+
+
+
+#contact-us-page
+    // padding-top: 25px
+    margin-bottom: 35px
+    .co-1
+        border: 1px solid $color-8-2
+        .title-1
+            background: $color-1
+            color: $color-2
+            font-size: $font-f
+            font-weight: bold
+            text-align: center
+            padding: 20px 0px
+        .co-img
+            text-align: center
+            padding: 47px 0px
+            border-bottom: 1px solid $color-8-2
+            img
+                width: 335px
+                @media screen and ( max-width:  $xs)
+                    width: 100%
+                    padding: 10px
+                    display: block
+                    
+        form
+            padding: 10px
+            padding-bottom: 0px
+            .form-group
+                .form-control
+                    font-size: $font-f
+                    font-weight: bold
+                    color: $color-8-2
+                    height: 52px
+                    border-radius: 0px !important
+                    outline: none !important
+                    box-shadow: none !important
+                    border-color: $color-8-2
+                    &:focus
+                        border-color: $color-14
+                    &[type=submit]
+                        background: $color-1
+                        border: 3px solid $color-8-2
+                        color: $color-2
+                        cursor: pointer
+                textarea.form-control
+                    resize: none
+                    height: 197px
+        .co-2
+            padding: 15px 35px
+            padding-bottom: 0px
+            address
+                // padding-bottom: 6px
+                margin-bottom: 0px
+                font-size: $font-h
+                p
+                    margin-bottom: 35px
+                    span
+                        &::before
+                            content: " : "
+            .list-social
+                direction: ltr
+                display: flex
+                justify-content: space-around
+                list-style: none
+                padding: 0px
+                margin-bottom: 0px
+                li
+                    width: 50px
+                    height: 50px
+                    margin: 15px 0px
+                    // background: red
+                    text-align: center
+                    &:hover
+                        opacity: .8
+                    &.li-facebook
+                        background: $ico-facebook
+                        a
+                            font-size: 44px
+                    &.li-twitter
+                        background: $ico-twitter
+                    &.li-youtube
+                        background: $ico-youtube
+                    &.li-instagram
+                        background: $ico-instagram
+                    &.li-whatsapp
+                        background: $ico-whatsapp
+                    &.li-google-plus
+                        background: $ico-google-plus
+                        line-height: 50px
+                        a
+                            font-size: $font-l
+                    a
+                        font-size: $font-m2
+                        color: $color-2
+            .title-2
+                font-size: $font-i
+                font-weight: bold
+                text-align: center
+                color: $color-5
+                font-weight: bold
+        
+        
+
+
+
+
+#who_are_we-page
+    // padding-top: 25px
+    .co
+        padding: 20px
+        border: 1px solid $color-8-2
+        margin-bottom: 35px
+        padding-bottom: 50px
+        .mo-img
+            display: block
+            width: 335px 
+            margin: 45px auto
+            @media screen and ( max-width:  $xs)
+                width: 100%
+        p
+            font-size: $font-g
+            // font-weight: bold
+            line-height: 25px
+            @media screen and ( max-width:  $xs)
+                text-align: center
+
+
+
+
+#article-page
+    // padding-top: 25px
+    .mo-img-1
+        display: block
+        width: 677px
+        margin: 0px auto
+        margin-bottom: 20px
+        @media screen and ( max-width:  $lg)
+            width: 100%
+    .co-1
+        display: flex
+        justify-content: space-between
+        background: $color-1
+        color: $color-2
+        padding: 10px
+        align-items: center
+        // padding-bottom: 0px
+        .title-1
+            font-size: $font-g
+            font-weight: bold
+            margin-bottom: 0px
+        .btn-heart
+            outline: none !important
+            background: none
+            color: $color-2
+            border: .5px solid $color-14
+            border-radius: 50%
+            cursor: pointer
+            width: 45px
+            height: 45px
+            line-height: 0px
+            font-size: $font-h
+    .co-2
+        border: 1px solid $color-8-2
+        padding: 10px
+        font-size: $font-g
+        line-height: 30px
+        @media screen and ( max-width: $sm)
+            text-align: center

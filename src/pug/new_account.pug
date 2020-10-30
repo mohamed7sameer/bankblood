@@ -1,0 +1,50 @@
+extends includes/_layout.pug
+
+block content
+  section(id="new-account")
+    +navBreadcrumb("الرئيسية","طلبات التبرع","طلب التبرع : احمد محمد")
+    .container
+      form(class="form-co" action="#")
+        -let x = " wow bounce"
+        div(class="form-group"+x data-wow-duration="2s" data-wow-delay=".1s")
+          input(type="text" class="form-control" aria-describedby="name" placeholder="الاسم" )
+        div(class="form-group"+x data-wow-duration="2s" data-wow-delay=".15s")
+          input(type="email" class="form-control" aria-describedby="email" placeholder="البريد الالكترونى")
+        div(class="form-group"+x data-wow-duration="2s" data-wow-delay=".2s")
+          div(class="input-group")
+            input(type="test" id="date-of-birth" class="form-control" autocomplete="off" aria-describedby="dateOfBirth" placeholder="تاريخ الميلاد")
+            div(class="input-group-append")
+              span(class="input-group-text")
+                  <i class="fa fa-calendar" aria-hidden="true"></i>
+        div(class="form-group"+x data-wow-duration="2s" data-wow-delay=".25s")
+          <div class="m-auto-complet">
+            input(type="text" class=" form-control" aria-describedby="bloodType" placeholder="فصيلة الدم" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+            <ul class="w-100">
+              <li>a+</li>
+              <li>b+</li>
+              <li>o+</li>
+            </ul>
+          </div>
+        div(class="form-group"+x data-wow-duration="2s" data-wow-delay=".3s")
+          select(id="governorate"  class="custom-select")
+        div(class="form-group"+x data-wow-duration="2s" data-wow-delay=".35s")
+          select(id="cities"  class="custom-select")
+        div(class="form-group"+x data-wow-duration="2s" data-wow-delay=".4s")
+          input(type="text" class="form-control" aria-describedby="phoneNumber" placeholder="رقم الهاتف")
+        div(class="form-group"+x data-wow-duration="2s" data-wow-delay=".45s")
+          div(class="input-group")
+              input(type="text" class="form-control" id="last-donation-date" autocomplete="off" aria-describedby="lastDateForDonation" placeholder="اخر تاريخ تبرع")
+              div(class="input-group-append")
+                span(class="input-group-text")
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+        div(class="form-group"+x data-wow-duration="2s" data-wow-delay=".5s")
+          input(type="password" class="form-control" aria-describedby="password" placeholder="كلمة المرور")
+        div(class="form-group"+x data-wow-duration="2s" data-wow-delay=".55s")
+          input(type="password" class="form-control" aria-describedby="repeatPassword" placeholder="تأكيد كلمة المرور")
+        div(class="text-center form-group"+x data-wow-duration="2s" data-wow-delay=".6s")
+          input(type="submit" class="hvr-hang" aria-describedby="submit" value="إنشاء")
+
+
+block append script
+  script.
+    newAccountPage()

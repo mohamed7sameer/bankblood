@@ -1,0 +1,67 @@
+extends includes/_layout.pug
+
+block content
+  section(id="contact-us-page")
+    +navBreadcrumb("الرئيسية","تواصل معنا")
+    .container
+      .row
+        -let x = "col-lg-6 mb-5 mb-lg-0"
+        div(class=x)
+          div(class="co-1 wow bounceInRight" data-wow-duration="2s" data-wow-delay=".1s")        
+            h2(class="title-1")
+              | اتصل بنا
+            div(class="co-img")
+              img(src=img + "logo.png", alt="")
+            div(class="co-2")
+              address
+                p
+                  | الجوال
+                  span
+                    | 1234123412312
+                p
+                  | فاكس
+                  span
+                    | 234234234
+                p
+                  | البريد الالكترونى
+                  span
+                    | name@name.com
+              h3(class="title-2")
+                | تواصل معنا
+              ul(class="list-social")
+                - let y = " hvr-grow-rotate"
+                li(class="li-facebook"+y)
+                  a(href="#")
+                   <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                li(class="li-twitter"+y)
+                  a(href="#")
+                   <i class="fab fa-twitter" aria-hidden="true"></i>
+                li(class="li-youtube"+y)
+                  a(href="#")
+                   <i class="fab fa-youtube" aria-hidden="true"></i>
+                li(class="li-instagram"+y)
+                  a(href="#")
+                   <i class="fab fa-instagram" aria-hidden="true"></i>
+                li(class="li-whatsapp"+y)
+                  a(href="#")
+                   <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                li(class="li-google-plus"+y)
+                  a(href="#")
+                   <i class="fab fa-google-plus" aria-hidden="true"></i>
+        div(class=x)
+          div(class="co-1 wow bounceInLeft" data-wow-duration="2s" data-wow-delay=".1s")        
+            h2(class="title-1")
+              | تواصل معنا
+            form(action="#" method="POST")
+              div(class="form-group")
+                input(type="text" class="form-control" placeholder="الاسم")
+              div(class="form-group")
+                input(type="email" class="form-control" placeholder="البريد الالكترونى")
+              div(class="form-group")
+                input(type="text" class="form-control" placeholder="الجوال")
+              div(class="form-group")
+                input(type="text" class="form-control" placeholder="عنوان الرسالة")
+              div(class="form-group")
+                textarea(type="text" class="form-control" placeholder="نص الرسالة")
+              div(class="form-group")
+                input(type="submit" class="form-control hvr-hang" value="ارسال")

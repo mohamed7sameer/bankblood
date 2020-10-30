@@ -1,0 +1,492 @@
+@import "_variable.sass"
+@import "_mixin.sass"
+
+
+html,body
+    font-family: janna
+    direction: rtl !important
+
+html
+
+body
+    
+    // overflow-y: scroll
+    // height: 500px
+
+// .ps__rail-y
+//     right: 0px !important
+//     z-index: 9999 !important
+//     // opacity: .5 !important
+//     .ps__thumb-y
+//         background: $color-1
+
+#top-nav
+    background: $color-1
+    .container
+    .row
+    a
+        color: white 
+        padding: 7px 10px
+        line-height: 41px
+        @media screen and ( max-width: $xs)
+            padding: 1px 5px
+    .co-right
+        a
+            font-size: $font-a
+            font-weight: bold
+            @media screen and ( max-width:  $xs)
+                font-size: $font-a - 2px
+        .ar
+            color: $color-5
+        .en
+            color: $color-4
+            border-right: 1px solid $color-4
+    .co-center
+        a
+            font-size: $font-g
+        // direction: ltr
+        text-align: left
+    .co-left
+        direction: ltr
+        text-align: left
+        a
+            font-size: $font-d
+            color: $color-11-3
+            transition: all .5s linear
+            text-decoration: none
+            display: inline
+            @media screen and ( max-width:  $xs)
+                font-size: $font-d - 6px
+            &:hover
+                text-decoration: underline
+                // color: $color-5 !important
+        .phone
+            i
+                padding-right: 10px
+            border-right: 1px solid $color-4
+        .email
+            i
+                padding-right: 10px
+        .login
+            font-size: $font-c
+            font-weight: bold
+            color: $color-15
+        .create-new-account
+            font-size: $font-c
+            font-weight: bold
+            text-decoration: underline
+            color: $color-8-2 
+
+
+
+nav.navbar
+    background: $color-11
+    box-shadow: 0px 0px 24px -12px grey
+    
+    .navbar-brand
+        img
+            width: 215px
+            @media screen and ( max-width:  $xs)
+                width: 180px
+                
+    .navbar-toggler
+        outline: none !important
+        // border-color: $color-1  !important
+        .navbar-toggler-icon
+            background-image: none
+            width: initial
+            height: initial
+            &::after
+                content: "\f0c9"
+                font-family: Font Awesome\ 5 Free
+                font-weight: 900
+                font-size: 30px
+                color: $color-1
+            
+    .ul-right
+        li
+            position: relative
+            a
+                font-size: $font-e
+                color: $color-9 !important
+                border-right: 1px solid $color-8-2
+                padding: 8px 15px !important
+                transition: all .5s linear
+                &::after
+                    content: ""
+                    width: 100%
+                    height: 3px
+                    background-color: transparent
+                    display: block
+                    position: absolute
+                    bottom: -34px
+                    @media screen and ( max-width: $md)
+                        height: 0px
+                        bottom: 0px                
+                @media screen and ( max-width: $lg)
+                    padding: 8px 5px !important  
+                @media screen and ( max-width: $md)
+                    border-right: 5px solid transparent
+                    transition: all .5s linear
+                    &:hover
+                        border-right: 5px solid $color-6
+            &::after
+                content: ""
+                width: 0px
+                height: 3px
+                background-color: transparent
+                display: block
+                position: absolute
+                bottom: -34px
+                left: 0px
+                right: 0px
+                margin: auto
+                transition: all .5s linear
+                @media screen and ( max-width: $md)
+                    height: 0px
+                    bottom: 0px
+            &:hover
+                a
+                    color:  $color-6 !important
+                &::after
+                    width: 98%
+                    background-color: $color-5
+            &.active
+                a
+                    color: $color-5 !important
+                    font-size: $font-f
+                    font-weight: bold
+                    border-right-color: transparent
+                &::after
+                    width: 95%
+                    background-color: $color-5
+                    
+                    
+    .ul-left
+        a
+            font-weight: bold
+        .createAcount
+            a
+                font-size: $font-d
+                color: $color-1 !important
+                text-decoration: underline black
+                transition: all .2s linear
+                &:hover
+                    transform: scale(1.03)
+                    
+        .login
+            a
+                font-size: $font-b
+                background: $color-1
+                color: $color-2 !important
+                padding: 10px 36px !important
+                border-radius: 5px
+                margin-right: 25px
+                display: inline-block
+                font-weight: bold
+                @media screen and ( max-width:  $lg)
+                    margin-right: 0px
+        .donation-request
+            a
+                display: block
+                width: 225px
+                background: $color-1
+                color: $color-2 !important
+                font-size: $font-f
+                position: relative
+                padding: 12px 0px
+                border-radius: 7px
+                padding-right: 90px
+                @media screen and ( max-width:  $lg)
+                    margin-right: 0px
+                    margin-top: 10px
+                &:after
+                    content: ""
+                    display: inline-block
+                    background: url($img + 'bankblood.png') no-repeat center
+                    background-size: contain 
+                    width: 80px
+                    height: 80px
+                    position: absolute
+                    top: -21px
+                    right: 0px
+
+
+
+
+#slider
+    .co-slider-top
+        // background: url($img + 'BG.jpg') left center
+        background: url($img + 'header.jpg') left center
+        background-size: 100% 100%
+        // background-size: cover
+        padding-top: 160px
+        padding-bottom: 125px
+        @media screen and ( max-width: $lg)
+            padding-top: 100px
+            padding-bottom: 80px
+        @media screen and ( max-width: $md)
+            background: url($img + 'BG1.jpg')
+            background-size: cover
+        @media screen and ( max-width: $sm)
+            text-align: center
+        h1
+            font-size: $font-m
+            font-weight: bold
+            color: $color-6
+            margin-bottom: 0px
+        p
+            font-size: $font-i
+            line-height: 50px
+            padding-left: 39px
+            @media screen and ( max-width: $md)
+                padding-left: 0px
+        a
+            border: 3px solid $color-2
+    .slick-dots
+        display: flex
+        justify-content: center
+        // z-index: 1
+        bottom: 0px
+        bottom: 34px
+        position: relative
+        margin: 0px
+        height: 0px
+        padding: 0px
+        cursor: pointer
+        li
+            display: inline-block
+            $size : 17px
+            width: $size
+            height: $size
+            border-radius: 50%
+            background-color: $color-2
+            display: flex
+            margin: 3px
+            border: 1px solid $color-14
+            transition: all .2s linear
+            &:hover
+                transform: scale(1.2,1.2)
+            &.slick-active
+                border: 1px solid $color-5
+            button
+                display: none
+
+
+
+#description
+    background: url($img + 'about2.png') left bottom no-repeat $color-13
+    background-size: 58% 95%
+    padding: 75px 0px
+    @media screen and ( max-width: $lg)
+        background-size: 55% 95%
+    @media screen and ( max-width: $md)
+        background-image: url($img + 'subtle-pattern-1.jpg')
+        background-size: cover
+        background-repeat: repeat
+        
+    .para-1
+        font-size: $font-h
+        line-height: 35px
+        text-align: center
+        span
+            color: $color-6
+
+
+
+
+
+#contact-us
+    background: url($img + 'call2.jpg') no-repeat center left
+    background-size: 100% 100%
+    @media screen and ( max-width:  $md)
+        background: url($img + 'BG1.jpg') no-repeat center left
+        background-size: cover
+    .co
+        .main-title
+            margin-top: 53px
+            margin-bottom: 41px
+
+        .para-1
+            font-size: $font-i
+            font-weight: bold
+        .btn-1
+            font-size: $font-k
+            @media screen and ( max-width:  $sm)
+                font-size: $font-k - 10px
+                
+            // font-weight: bold
+            font-family: Arial, Helvetica, sans-serif
+            background: $color-3
+            color: $color-2
+            padding: 20px 20px
+            border-radius: 100px
+            padding-left: 83px
+            position: relative
+            margin-top: 25px
+            display: inline-block
+            margin-bottom: 54px
+            letter-spacing: 2.5px
+            text-decoration: none !important
+            img
+                position: absolute
+                left: -1px
+                top: -8px
+                width: 75px
+
+
+
+#aplication_bank_blood
+    background: url($img + 'bg_phone.png')
+    background-size: cover
+    padding-top: 50px
+    padding-bottom: 35px
+    @media screen and ( max-width: $xs)
+        text-align: center
+    .co
+        padding-top: 60px
+        
+        .main-title
+            border-bottom: none
+            color: $color-10
+        .para-1
+            font-size: $font-h
+            line-height: 50px
+        .para-2
+            font-size: $font-k
+            font-weight: bold
+            text-align: center
+        .co-2
+            text-align: center
+            .link-img
+                img
+                    width: 220px
+                    margin: 0px 10px
+                    @media screen and ( max-width: $lg)
+                        width: 200px
+                    @media screen and ( max-width: $md)
+                        width: 220px
+                    
+
+    .co-img
+        text-align: center
+        img
+            width: 500px
+            display: block
+            margin: auto
+            @media screen and ( max-width: $lg)
+                // display: none
+                margin-top: 30px
+                width: 450px
+            @media screen and ( max-width: $sm)
+                width: 100%
+                
+
+
+
+footer
+    // margin-bottom: 1000px
+    #top-footer
+        background: $color-11-2
+        padding-top: 60px
+        padding-bottom: 15px
+        .co-right
+            a
+                img
+                    width: 210px
+                
+            .title-1
+                margin: 25px 0px
+                font-size: $font-h
+                font-weight: bold
+                color: $color-2
+            .para-1
+                color: $color-2
+                font-size: $font-d
+                line-height: 27px
+                padding-left: 80px
+                @media screen and ( max-width: $lg)
+                    padding-left: 0px
+
+        .co-center
+            padding: 15px 0px
+            display: flex
+            flex-direction: column
+            height: 100%
+            // width: 100px
+            // align-items: center
+            
+            a
+                font-size: $font-d
+                color: $color-2
+                height: 100%
+                display: inline-flex
+                align-items: center
+                width: 150px
+                padding-right: 10px
+                border-right: 3px solid transparent
+                transition: all .5s linear
+                &:hover
+                    text-decoration: none
+                    border-right: 3px solid $color-6
+                    color: $color-6
+                &.active
+                    font-weight: bold
+                    color: $color-5
+
+        .co-left
+            padding: 15px 0px
+            @media screen and ( max-width: $sm)
+                text-align: center
+            .para-2
+                font-size: $font-c
+                font-weight: bold
+                color: $color-5
+                margin-bottom: 68px
+                @media screen and ( max-width: $sm)
+                    margin-bottom: 10px
+            .co-img
+                img
+                    width: 190px
+                    display: block
+                    margin-bottom: 25px
+                    @media screen and ( max-width: $sm)
+                        display: inline
+                        margin: 10px
+    #bottom-footer
+        background: $color-12
+        // padding: 20px 0px
+        @media screen and ( max-width: $md)
+            // padding: 10px 0px
+            text-align: center
+            // padding-bottom: 20px
+            
+        .co-right
+            a
+                font-size: $font-j
+                color: $color-2
+                padding: 10px 20px
+                display: inline-block
+                @media screen and ( max-width: $md)
+                    padding: 8px 15px 
+                    
+        .co-center
+            height: 100%
+            display: flex
+            align-items: center
+            @media screen and ( max-width: $sm)
+                justify-content: center
+                padding: 10px 0px
+                padding-bottom: 20px
+            .para-1
+                font-size: $font-c
+                color: $color-2
+                font-weight: bold
+                margin-bottom: 0px
+                a
+                    color: $color-5
+@import "_reset_of_the_page"
+
+
+
+

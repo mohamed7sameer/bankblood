@@ -1,0 +1,75 @@
+extends includes/_layout.pug
+
+block topnav
+  a(class="phone hvr-icon-drop" href="#")
+    i(class="fa fa-phone hvr-icon")
+    | +966506954964
+  a(class="email hvr-icon-drop" href="#")
+    i(class="fa fa-envelope hvr-icon")
+    | name@name.com
+
+
+
+block navBar
+  li.createAcount.nav-item
+    a.nav-link(href='new_account.html')
+      | انشاء حساب جديد
+  li.login.nav-item
+    a(class="nav-link hvr-wobble-skew"  href='login.html')
+      | الدخول    
+
+block content
+  section(id="slider")
+    -for(var i = 0; i<4; i++)  
+      div(class="co-slider-top")
+        div(class="container")
+          .row
+            div(class="col-xl-5 col-lg-6")
+              div(class="co wow bounceInDown" data-wow-duration="2s" data-wow-delay=".1s")
+                h1
+                  | بنك الدم نمضى قدما لصحة أفضل
+                p
+                  | هذا النص هو مثال لنص يمكن أن يستبدل فى نفس المساحة, لقد تم توليد هذا النص من مولد النص العرب
+                a(class="btn-main-1 hvr-wobble-vertical" href="#")
+                  | المزيد
+  section(id="description")
+    .container
+      .row
+        .col-lg-6
+          p(class="para-1 wow bounceInRight" data-wow-duration="2s" data-wow-delay=".1s")
+            span بنك الدم 
+            | هذا النص هو مثال لنص يمكن أن يستبدل فى نفس المساحة, لقد تم توليد هذا النص من مولد النص العربى, حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى. إضافة الى زيادة عدد الحروف التى يولدها التطبيق
+            | يطلع على صورة حقيقية لتصميم الموقع
+  +blog()
+  +donationRequest()
+  section(id="contact-us")
+    .container
+      .row
+        .col-xl-7.col-lg-8
+          div(class="co text-center wow bounceInRight" data-wow-duration="2s" data-wow-delay=".3s")
+            h2(class="main-title")
+              | اتصل بنا
+            p(class="para-1")
+              | يمكنك الاتصال بنا للاستفسار عن معلومة وسيتم الرد عليكم
+            a(href="" dir="ltr" class="btn-1 hvr-wobble-skew")
+              |  + 002 1215454551
+              img(src=img + "whats.png", alt="")
+  section(id="aplication_bank_blood")
+    .container
+      .row
+        .col-lg-6.order-lg-2
+          div(class="co-img")
+            img(class="" src=img+"App.png", alt="")
+        .col-lg-6.order-lg-1
+          div(class="co wow bounceInRight" data-wow-duration="2s" data-wow-delay="1s")
+            h2(class="main-title")
+              | تطبيق بنك الدم
+            p(class="para-1")
+              | هذا النص هو مثال لنص يمكن أن يستبدل فى نفس المساحة, لقد تم توليد هذا النص من مولد النص العربى
+            p(class="para-2")
+              | متوفر على
+            div(class="co-2")
+              a(class="link-img hvr-float-shadow" href="#")
+                img(src=img +"google.png", alt="")
+              a(class="link-img hvr-float-shadow" href="#")
+                img(src=img +"ios.png", alt="")

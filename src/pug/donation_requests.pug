@@ -1,0 +1,73 @@
+extends includes/_layout.pug
+
+block content
+  main(id="main-donation-request")
+    +navBreadcrumb("الرئيسية","طلبات التبرع","طلب التبرع : احمد محمد")
+    div(class="container")
+      div(class="main-co")
+        - let x = 'col-lg-6 '
+        - let y = " bounceInUp"
+        - let z = " bounceInDown"
+        .row
+          div(class=x)
+            div(class="co wow"+y data-wow-duration="2s" data-wow-delay=".1s")
+              p
+                | الاسم
+              p
+                | احمد محمد
+          div(class=x)
+            div(class="co wow"+z data-wow-duration="2s" data-wow-delay=".1s")
+              p
+                | فصيلة الدم
+              p
+                | A+
+          div(class=x)
+            div(class="co wow"+y data-wow-duration="2s" data-wow-delay=".2s")
+              p
+                | العمر
+              p
+                | 28 عام
+          div(class=x)
+            div(class="co wow"+z data-wow-duration="2s" data-wow-delay=".2s")
+              p
+                | عدد الاكياس المطلوبة
+              p
+                | 3 أكياس
+          div(class=x)
+            div(class="co wow"+y data-wow-duration="2s" data-wow-delay=".3s")
+              p
+                | المشفى
+              p
+                | الخير الدولية
+          div(class=x)
+            div(class="co wow"+z data-wow-duration="2s" data-wow-delay=".3s")
+              p
+                | رقم الجوال
+              p
+                | 0245487878
+          div(class="col-12")
+            div(class="co co-address wow"+y data-wow-duration="2s" data-wow-delay=".4s")
+              p
+                | عنوان المشفى
+              p
+                | المنصورة - شارع عبدالعزيز بجوار المرور المتفرع من الدولى
+        div(class="text-center")
+          a(href="details.html" class="btn-1 hvr-ripple-out wow bounce" data-wow-duration="3s" data-wow-delay=".1s")
+            | التفاصيل
+        div(class="co-para-1")
+          p(class="wow fadeIn" data-wow-duration="3s" data-wow-delay=".1s")
+            | هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+            | هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+          p(class="wow fadeIn" data-wow-duration="3s" data-wow-delay=".1s")
+            | هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+            | هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+        div(class="co-map" id="map")
+
+
+
+block prepend script
+  script(src="https://polyfill.io/v3/polyfill.min.js?features=default")
+  script(
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlMt_4D3zhsujoMYIUfAyXvQ3r0-nbdS4&callback=initMap&libraries=&v=weekly",
+    defer
+  )
