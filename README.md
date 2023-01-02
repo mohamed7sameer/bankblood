@@ -1,2 +1,2 @@
 # bankblood
-https://festive-fermat-d73e25.netlify.app
+https://mohamed7sameer.github.io/bankblood/
